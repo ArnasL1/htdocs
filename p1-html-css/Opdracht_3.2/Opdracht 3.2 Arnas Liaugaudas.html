@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>Vakantie form</h1>
+<form>
+    <label for="name">Voornaam</label>
+    <input type="text" id="name" placeholder="Voornaam" pattern="[a-zA-Z]"/><br>
+    <label for="lastname">Achternaam</label>
+    <input type="text" id="lastname" placeholder="Achternaam" pattern="[a-zA-Z]"/><br>
+    <label for="gender">Geslacht</label>
+    <select id="gender">
+        <option selected>Man</option>
+        <option>Vrouw</option>
+    </select><br>
+    <label for="street">Straat met huisnummer</label>
+    <input type="text" id="street" placeholder="Bijvoorbeeldstraat 11"/><br>
+    <label for="postcode">Postcode</label>
+    <input type="text" id="postcode" pattern="[0-9]{4}[A-Z]{2}" placeholder="1111AA"/><br>
+    <label for="stad">Stad</label>
+    <input type="text" id="stad" placeholder="Amsterdam"/><br>
+    <label for="land">Land</label>
+    <input type="text" id="land" placeholder="Nederlands"/><br>
+    <label for="bsn">BSN nummer</label>
+    <input type="number" id="bsn" placeholder="123456789" maxlength="9"
+    size="9"/><br>
+    <label for="lands">Vakantie land</label>
+    <select id="lands">
+        <option>Spanje</option>
+        <option>Nederlands</option>
+        <option>Verenigde Staten</option>
+        <option>Australië</option>
+    </select><br>
+    <label for="dateStart">Datum van vertrek</label>
+    <input type="date" id="dateStart" min="2024-09-10"/><br>
+    <label for="dateEnd">Datum van terugkomst</label>
+    <input type="date" id="dateEnd" min="2024-09-10"/><br>
+    <label for="people">Aantal reisgenoten</label>
+    <input type="number" id="people" min="1" max="4"/><br>
+    <input type="submit" value="Boek nu"/><br>
+    <br>
+</form>
+<form>
+    <h2>Maak een account</h2>
+    <label for="loginemail">Email</label>
+    <input type="email" id="loginemail" placeholder="email@email.com"/><br>
+    <label for="password">Wachtwoord</label>
+    <input type="password" id="password" placeholder="Wachtwoord"/>
+</form>
+</body>
+</html>

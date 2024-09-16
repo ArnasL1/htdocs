@@ -8,7 +8,16 @@ html {
 }
 body {
   font-family: "Goldman", cursive;
+  background-image: url("img/background.jpeg");
+  background-size: cover;
+  color: White;
 }
+h1{
+  font-size: 60px;
+  text-align: center;
+  padding-top: 200px;
+}
+
 
 nav {
   display: flex;

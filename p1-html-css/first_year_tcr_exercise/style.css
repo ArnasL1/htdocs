@@ -8,6 +8,8 @@ html {
 }
 body {
   font-family: "Goldman", cursive;
+  min-height: 100vh;
+  position: relative;
 }
 #homescreen {
   background-image: url("img/background.jpeg");
@@ -18,14 +20,16 @@ body {
 }
 .whitescreen {
   background-color: white;
-  color:black;
+  color: black;
+  min-height: 100vh;
+  position: relative;
 }
 
 .blackscreen {
-background-color: black;
-color: white;
+  background-color: black;
+  color: white;
 }
-h1{
+h1 {
   font-size: 7rem;
   text-align: center;
   padding-top: 25vh;
@@ -34,18 +38,17 @@ h1{
 h2 {
   font-size: 6rem;
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 7vh;
   font-weight: bold;
 }
-aside article {
-  display: flex;
-  flex-wrap: wrap;
 
-}
-img {
-  size: 0.5rem;
+.logo {
+  width: 40rem;
+  float: left;
 }
 nav {
+  position: sticky;
+  top: 0;
   display: flex;
   width: 100%;
   padding: 2rem;
@@ -57,13 +60,26 @@ nav {
   justify-content: space-between;
 }
 footer {
-position:absolute;
-bottom:0;
-width: 100%;
-padding: 2rem;
-min-height: 10rem;
-background: #00a8c7;
-text-align:center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  height: 10rem;
+  background: #00a8c7;
+  text-align: center;
+}
+article {
+  float: right;
+  font-size: 2.2rem;
+  width: 50%;
+  padding: 1rem 10rem 1rem 1rem;
+  align-items: center;
+}
+figure {
+  float: left;
+  width: 50%;
+  padding: 0 10% 0 10%;
+  align-content: center;
 }
 #footer {
   padding: 1.5em 0;
@@ -73,11 +89,13 @@ nav ul {
   align-items: center;
   list-style-type: none;
 }
-nav li, footer {
+nav li,
+footer {
   font-size: 2.5rem;
   padding: 0 4rem 0 4rem;
 }
-nav a, footer {
+nav a,
+footer {
   color: white;
   text-decoration: none;
 }

@@ -5,11 +5,11 @@
 }
 html {
   font-size: 62.5%;
+  position: relative;
+  min-height: 100vh;
 }
 body {
   font-family: "Goldman", cursive;
-  min-height: 100vh;
-  position: relative;
 }
 #homescreen {
   background-image: url("img/background.jpeg");
@@ -21,8 +21,6 @@ body {
 .whitescreen {
   background-color: white;
   color: black;
-  min-height: 100vh;
-  position: relative;
 }
 
 .blackscreen {
@@ -40,11 +38,11 @@ h2 {
   text-align: center;
   padding-top: 7vh;
   font-weight: bold;
+  margin-bottom: 3rem;
 }
-
-.logo {
-  width: 40rem;
+img {
   float: left;
+  width: 40rem;
 }
 nav {
   position: sticky;
@@ -69,10 +67,9 @@ footer {
   text-align: center;
 }
 article {
-  float: right;
+  float: left;
   font-size: 2.2rem;
   width: 50%;
-  padding: 1rem 10rem 1rem 1rem;
   align-items: center;
 }
 figure {
@@ -101,4 +98,39 @@ footer {
 }
 nav img {
   width: 5vw;
+}
+.logo {
+  float: left;
+}
+p {
+  font-weight: 10;
+}
+form {
+  position: relative;
+  margin: auto;
+  font-size: 1.8rem;
+  width: 35vw;
+  height: 40vh;
+}
+input,
+textarea {
+  width: 35vw;
+  border-radius: 0.3rem;
+  margin: 0.5vh 0 1vh 0;
+  height: 3vh;
+  padding: 2vh 0;
+  border-color: black;
+  border-width: 1px;
+
+}
+#submit {
+  margin-top: 2vh;
+  text-align: center;
+  background-color: #00a8c7;
+  font-family: "Goldman", cursive;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 1px;
+  height: 5vh;
 }

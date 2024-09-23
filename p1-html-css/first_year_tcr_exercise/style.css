@@ -44,19 +44,6 @@ img {
   float: left;
   width: 40rem;
 }
-nav {
-  position: sticky;
-  top: 0;
-  display: flex;
-  width: 100%;
-  padding: 2rem;
-  min-height: 10vh;
-  align-items: center;
-  margin: auto;
-  flex-wrap: wrap;
-  background: #00a8c7;
-  justify-content: space-between;
-}
 footer {
   position: absolute;
   bottom: 0;
@@ -81,24 +68,6 @@ figure {
 #footer {
   padding: 1.5em 0;
 }
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-}
-nav li,
-footer {
-  font-size: 2.5rem;
-  padding: 0 4rem 0 4rem;
-}
-nav a,
-footer {
-  color: white;
-  text-decoration: none;
-}
-nav img {
-  width: 5vw;
-}
 .logo {
   float: left;
 }
@@ -121,7 +90,6 @@ textarea {
   padding: 2vh 0;
   border-color: black;
   border-width: 1px;
-
 }
 #submit {
   margin-top: 2vh;
@@ -133,4 +101,60 @@ textarea {
   text-decoration: none;
   padding: 1px;
   height: 5vh;
+}
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  background: #00a8c7;
+  justify-content: space-between;
+}
+nav ul:not(#drop-content) {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li,
+footer {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav a,
+footer {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+}
+#drop-main {
+}
+#drop-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+#drop-main:hover #drop-content {
+  display: block;
+}
+#drop-main:hover a{
+  background-color: white;
+  color:#00a8c7;
+}
+#drop-main a:hover:not(#drop-button) {
+  background-color: #E9E9E9;
+}
+li:not(#drop-content) a {
+  padding: 1rem;
+}
+#drop-content a {
+  display: block;
+  text-align: left;
+  color:#00a8c7;
 }

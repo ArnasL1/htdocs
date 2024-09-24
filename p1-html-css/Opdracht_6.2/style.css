@@ -1,0 +1,27 @@
+#parent {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  flex-direction: row-reverse;
+}
+#child1 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+#child2 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+#child3 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+#child4 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}

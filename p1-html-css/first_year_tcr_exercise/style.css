@@ -133,15 +133,18 @@ footer {
 nav img {
   width: 5vw;
 }
-#drop-main {
+#drop-main { 
+  display: flex;
+  flex-direction: column;
 }
 #drop-content {
   display: none;
+  flex-direction: column;
   position: absolute;
   background-color: white;
 }
 #drop-main:hover #drop-content {
-  display: block;
+  display: flex;
 }
 #drop-main:hover a{
   background-color: white;
@@ -152,9 +155,4 @@ nav img {
 }
 li:not(#drop-content) a {
   padding: 1rem;
-}
-#drop-content a {
-  display: block;
-  text-align: left;
-  color:#00a8c7;
 }

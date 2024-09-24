@@ -1,0 +1,21 @@
+#parent {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 100vh;
+}
+#child1 {
+  display: inherit;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+#child2 {
+  display: inherit;
+  flex-grow: 2;
+  justify-content: space-around;
+}
+#child3 {
+  display: inherit;
+  flex-grow: 1;
+  justify-content: space-around;
+}

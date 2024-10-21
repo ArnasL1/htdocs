@@ -1,14 +1,16 @@
 const gameScreen = document.getElementById("game");
 const mainText = document.getElementById("mainText");
 const secondaryText = document.getElementById("secondaryText");
+const button = document.getElementById("button");
 let gameInProgress = false;
 let gameWait = false;
 let startReaction;
 let GameTimer;
-document.addEventListener("click", () => {
-  if (!gameInProgress) {
+document.addEventListener("click", (e) => {
+  if (!gameInProgress && e.target.toString() == "[object HTMLButtonElement]") {
     gameInProgress = true;
     gameWait = true;
+    button.style.display = "none";
     randomTime = Math.floor(Math.random() * 4000 + 3000);
     gameScreen.style.backgroundColor = "var(--red)";
     mainText.innerHTML = "Wacht...";
@@ -32,10 +34,8 @@ document.addEventListener("click", () => {
     let endReaction = Date.now();
     mainText.innerHTML = "Jouw reactie:";
     secondaryText.innerHTML =
-      endReaction -
-      startReaction +
-      " ms" +
-      "<br>Klik om het opnieuw te proberen!";
+      endReaction - startReaction + " ms<br>Klik om het opnieuw te proberen!";
+    button.style.display = "inline-block";
     gameInProgress = false;
     gameWait = false;
   }

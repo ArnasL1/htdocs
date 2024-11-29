@@ -36,7 +36,7 @@ setInterval(() => {
     happinessBar.style.width = happiness + "%";
   }
   //Knoppjes:
-}, 50);
+}, 1000);
 feedButton.addEventListener("click", () => {
   hunger = Math.min(100, (hunger += 25));
 });

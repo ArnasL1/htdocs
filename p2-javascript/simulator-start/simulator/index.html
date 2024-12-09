@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="container">
+    <header>
+      <h1>Traffic Simulator</h1>
+    </header>
+    <section class="buttons">
+      <button onclick="start()">Start</button>
+      <button onclick="stop()">Stop</button>
+      <button onclick="again()">Opnieuw</button>
+      <button onclick="turnOn()">Aan</button>
+      <button onclick="blink()">Knipperen</button>
+      <button onclick="turnOff()">Uit</button>
+    </section>
+  </section>
+  <img id="traffic_light" class="trafficLight" src="./img/shutOff.png" />
+  <img id="car" class="car" src="./img/car_green.png" >
+  <img id="traffic_light2" class="trafficLight" src="./img/shutOff2.png" />
+  <img id="car2" class="car" src="./img/car_red.png" >
+  <img id="traffic_light3" class="trafficLight" src="./img/shutOff3.png" />
+  <img id="car3" class="car" src="./img/car_blue.png" >
+  <img id="traffic_light4" class="trafficLight" src="./img/shutOff4.png" />
+  <img id="car4" class="car" src="./img/fire.png" >
+  <script src="app.js"></script>
+</body>
+
+</html>
